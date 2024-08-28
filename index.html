@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Multimedia Website</title>
+  </head>
+  <body>
+    <nav>
+      <img class="profile-pic" src="./assets/profile.png" />
+      <h2>MAX GAME ARENA</h2>
+      <ul class="list">
+        <li>HOME</li>
+        <li>FEEDBACK</li>
+      </ul>
+    </nav>
+    <section class="main">
+      <section class="game">
+        <h2 class="game-head" id="gamehead">0</h2>
+        <div class="btn">
+          <button id="increase">Increase</button>
+          <button id="reset">Reset</button>
+          <button id="decrease">Decrese</button>
+        </div>
+      </section>
+      <form class="form">
+        <h3>
+          Welcome to Max Game Arena...Please fill out the form.
+        </h3>
+        <section class="form-elements">
+            <input type="text" pattern="[A-Za-z]+" title="Name Should Only Contain Letters" id="name" placeholder="Enter Your Name" required />
+          <input type="email" id="email" placeholder="Enter Your Email" />
+          <textarea id="comments" rows="1" cols="20" placeholder="Enter Your Feedback"></textarea>
+        </section>
+        <button id="submit-btn">Submit</button>
+      </form>
+      <section class="svg">
+        <svg width="300" height="130" class="rectangle">
+          <rect width="200" height="100" x="10" y="10" rx="20" ry="20" fill="black" id="rectangle-box"/>
+        </svg>
+       <button id="rectangle-button">Click Here To Change Color</button>
+      </section>
+      <section class="video">
+        <h2>Click and Enjoy the Video</h2>
+        <iframe width="250" height="150" src="https://www.youtube.com/embed/gk6Jri1kGTs?si=92v0zxA8WH0QGEtJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+    </section>
+   <script src="index.js"></script>
+  </body>
+</html>
